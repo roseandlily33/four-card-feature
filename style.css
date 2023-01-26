@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --Poppins: 'Poppins', sans-serif;
+}
+body{
+    font-family: var(--Poppins);
+    background-color: var(--GrayishBlue);
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.7em;
+    padding: 0.5em;
+}
+#light{
+    font-weight: 200;
+}
+#bold{
+    font-weight: 700;
+}
+#top p{
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.card{
+   
+    padding: 1.5em;
+    height: 50%;
+    width: 50%;
+
+}
+.card h2{
+font-size: 1em;
+}
+.card p{
+    font-size: 0.5em;
+}
+.card img{
+    float: right;
+
+}
+.card-1{
+    border-top: var(--Cyan);
+}
+.card-2{
+    border-top: var(--Red);
+}
+.card-3{
+    border-top: var(--Orange);
+}
+.card-4{
+    border-top: var(--Blue);
+}
